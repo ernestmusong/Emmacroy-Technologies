@@ -9,31 +9,31 @@ const reviews = [
   },
   {
     id: 2,
-    name: 'Mbah denzel',
+    name: 'Derick dice sk',
     profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
+    img: 'images/derick.jpg',
   },
   {
     id: 3,
     name: 'katche elvis',
     profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
+    img: 'images/elvis.jpg',
   },
   {
     id: 4,
     name: 'louis katche',
     profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
+    img: 'images/louis.jpg',
   },
   {
     id: 5,
     name: 'katche festus',
     profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
+    img: 'images/festus.jpg',
   },
    
 
