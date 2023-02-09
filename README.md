@@ -105,9 +105,9 @@ You can deploy this project using:
 
 👤 **Musong Ernest**
 
-- GitHub: [@githubhandle](https://github.com/ernestmusong)
-- Twitter: [@twitterhandle](https://twitter.com/MusongAkeh)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/musong-ernest-akeh-921b73211/)
+- GitHub: [@ernestmusong](https://github.com/ernestmusong)
+- Twitter: [@MusongAkeh](https://twitter.com/MusongAkeh)
+- LinkedIn: [Musong Ernest](https://www.linkedin.com/in/musong-ernest-akeh-921b73211/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
