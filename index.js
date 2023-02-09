@@ -59,7 +59,7 @@ const displayReviews = (reviews) => {
   let featureReviews = reviews.slice(reviews.length-4, reviews.length)
   featureReviews.map((item) => {
     result += `
-    <div class="review">
+    <article class="review">
         <div class="reviewer-img-wrap">
             <img src=${item.img} alt="">
         </div>
@@ -69,7 +69,7 @@ const displayReviews = (reviews) => {
             <div class="underline"></div>
             <p>${item.text}</p>
         </div>
-   </div>
+   </article>
   `;
     return result;
   });
