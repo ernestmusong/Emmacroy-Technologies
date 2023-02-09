@@ -35,6 +35,20 @@ const reviews = [
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/festus.jpg',
   },
+  {
+    id: 6,
+    name: 'kum paul',
+    profession: 'Student at Emmacroy Technologies',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    img: 'images/eleven.jpeg',
+  },
+  {
+    id: 7,
+    name: 'Abanda Beckley',
+    profession: 'Student at Emmacroy Technologies',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    img: 'images/radivin.jpeg',
+  },
 
 ];
 
@@ -55,7 +69,7 @@ let result = '';
 
 // DISPLAYING REVIEWS
 const displayReviews = (reviews) => {
-  const featureReviews = reviews.slice(reviews.length - 4, reviews.length);
+  const featureReviews = reviews.slice(reviews.length - 6, reviews.length);
   featureReviews.map((item) => {
     result += `
     <article class="review">

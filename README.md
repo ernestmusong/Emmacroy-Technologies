@@ -25,7 +25,6 @@
 # 📖 [Emmacroy Technologies] <a name="about-project"></a>
 
 **[Emmacroy Technologies]** is my capstone project at <a href='https://www.microverse.org/'>Microverse</a> module one. It's an education website for web development. It currently contains only the Home and About pages, other pages like the contact page and registration pages will be create later. It is currently onsite but I intend to make it online too.
-I have used  the <a href='https://www.microverse.org/'>Creative Commons</a> design template by <a href='https://www.behance.net/adagio07'>Cindy Shin in Behance</a> for this project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -72,8 +71,6 @@ I have used  the <a href='https://www.microverse.org/'>Creative Commons</a> desi
 
 ### Prerequisites
 
-In order to run this project you need:
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -89,15 +86,9 @@ sh
   npm install
 ### Usage
 
-To run the project, execute the following command:
-
 ### Run tests
 
-To run tests, run the following command:
-
 ### Deployment
-
-You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,6 +125,7 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+I have used  the <a href='https://www.microverse.org/'>Creative Commons</a> design template by <a href='https://www.behance.net/adagio07'>Cindy Shin in Behance</a> for this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
