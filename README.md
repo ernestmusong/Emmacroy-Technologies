@@ -22,9 +22,10 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Porfolio] <a name="about-project"></a>
+# 📖 [Emmacroy Technologies] <a name="about-project"></a>
 
-**[your_project__name]** is a...
+**[Emmacroy Technologies]** is my capstone project at <a href='https://www.microverse.org/'>Microverse</a> module one. It's an education website for web development. It currently contains only the Home and About pages, other pages like the contact page and registration pages will be create later. It is currently onsite but I intend to make it online too.
+I have used  the <a href='https://www.microverse.org/'>Creative Commons</a> design template by <a href='https://www.behance.net/adagio07'>Cindy Shin in Behance</a> for this project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -32,7 +33,7 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">HTML/CSS</a></li>
+    <li><a href="#">HTML/CSS/JAVASCRIPT</a></li>
   </ul>
 </details>
 
@@ -46,7 +47,7 @@
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="#">PostgreSQL</a></li>
+    <li><a href="#"></a></li>
   </ul>
 </details>
 
@@ -59,11 +60,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/ernestmusong/ernestmusong.github.io)
+- [Live Demo Link]()
 
 ## 🚀 Project Presentation <a name="live-demo"></a>
 
-- [Presentation Link](https://www.loom.com/share/3909e4839d5243ef8cf7fb2a92e6c8c0)
+- [Presentation Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +158,8 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
-This project is [MIT](./LICENSE.txt) licensed.
+<!-- This project is [MIT](LICENSE.txt) licensed. -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
