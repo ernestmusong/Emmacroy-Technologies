@@ -3,39 +3,38 @@ const reviews = [
   {
     id: 1,
     name: 'Mbah denzel',
-    profession: `general manager at All cocoa business, Kumba`,
+    profession: 'general manager at All cocoa business, Kumba',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/denzel.jpg',
   },
   {
     id: 2,
     name: 'Derick dice sk',
-    profession: `CEO at Green Engineering and Consultancy, Buea`,
+    profession: 'CEO at Green Engineering and Consultancy, Buea',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/derick.jpg',
   },
   {
     id: 3,
     name: 'katche elvis',
-    profession: `Director at Good Morning Zang Construction`,
+    profession: 'Director at Good Morning Zang Construction',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/elvis.jpg',
   },
   {
     id: 4,
     name: 'louis katche',
-    profession: `Technical Advicer at lT and Services, Limbe`,
+    profession: 'Technical Advicer at lT and Services, Limbe',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/louis.jpg',
   },
   {
     id: 5,
     name: 'katche festus',
-    profession: `Student at Emmacroy Technologies`,
+    profession: 'Student at Emmacroy Technologies',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/festus.jpg',
   },
-   
 
 ];
 
@@ -51,12 +50,12 @@ sideBar.addEventListener('click', () => {
 });
 
 // REVIEWS
-const reviewsDom = document.querySelector('.reviews-wrap')
+const reviewsDom = document.querySelector('.reviews-wrap');
 let result = '';
 
 // DISPLAYING REVIEWS
 const displayReviews = (reviews) => {
-  let featureReviews = reviews.slice(reviews.length-4, reviews.length)
+  const featureReviews = reviews.slice(reviews.length - 4, reviews.length);
   featureReviews.map((item) => {
     result += `
     <article class="review">
@@ -78,24 +77,24 @@ const displayReviews = (reviews) => {
 };
 
 // BACK TO TOP
-const navbar = document.getElementById("nav");
-const topLink = document.querySelector(".back-to-top");
+const navbar = document.getElementById('nav');
+const topLink = document.querySelector('.back-to-top');
 
-window.addEventListener("scroll", function () {
-  let scrollHeight = window.pageYOffset;
+window.addEventListener('scroll', () => {
+  const scrollHeight = window.pageYOffset;
   const navHeight = navbar.getBoundingClientRect().height;
   if (scrollHeight > navHeight) {
-    navbar.classList.add("fixed-nav");
+    navbar.classList.add('fixed-nav');
   } else {
-    navbar.classList.remove("fixed-nav");
+    navbar.classList.remove('fixed-nav');
   }
   if (scrollHeight > 300) {
-    topLink.classList.add("show-link");
+    topLink.classList.add('show-link');
   } else {
-    topLink.classList.remove("show-link");
+    topLink.classList.remove('show-link');
   }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  displayReviews(reviews)
+  displayReviews(reviews);
 });
