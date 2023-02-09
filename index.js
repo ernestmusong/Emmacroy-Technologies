@@ -77,6 +77,25 @@ const displayReviews = (reviews) => {
   return result;
 };
 
+// BACK TO TOP
+const navbar = document.getElementById("nav");
+const topLink = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", function () {
+  let scrollHeight = window.pageYOffset;
+  const navHeight = navbar.getBoundingClientRect().height;
+  if (scrollHeight > navHeight) {
+    navbar.classList.add("fixed-nav");
+  } else {
+    navbar.classList.remove("fixed-nav");
+  }
+  if (scrollHeight > 300) {
+    topLink.classList.add("show-link");
+  } else {
+    topLink.classList.remove("show-link");
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   displayReviews(reviews)
 });

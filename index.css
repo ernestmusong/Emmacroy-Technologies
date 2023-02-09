@@ -564,6 +564,34 @@ footer {
   width: 80%;
 }
 
+/* Back to top */
+.back-to-top {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+  border: none;
+  background: var(--orange);
+  /* float: right; */
+}
+
+.back-to-top .fas {
+  color: var(--main-white);
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
 /* ------------------------------------------Media queries------------------------------------------ */
 @media screen and (max-width: 768px) {
   .nav-menu,
@@ -875,5 +903,17 @@ footer {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
   }
 }
