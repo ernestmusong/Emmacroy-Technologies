@@ -681,7 +681,7 @@ footer {
   .show-sidebar,
   #close-btn,
   .copy-right-mobile,
-  .about-partners{
+  .about-partners {
     display: none !important;
   }
 
@@ -847,6 +847,7 @@ footer {
   .copy-right-desktop-abt p {
     color: var(--softGrey);
   }
+
   .about-tagline {
     width: 50%;
     margin: 0 auto;
