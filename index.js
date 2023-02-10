@@ -3,39 +3,52 @@ const reviews = [
   {
     id: 1,
     name: 'Mbah denzel',
-    profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
+    profession: 'general manager at All cocoa business, Kumba',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/denzel.jpg',
   },
   {
     id: 2,
-    name: 'Mbah denzel',
-    profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
+    name: 'Derick dice sk',
+    profession: 'CEO at Green Engineering and Consultancy, Buea',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
+    img: 'images/derick.jpg',
   },
   {
     id: 3,
     name: 'katche elvis',
-    profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
+    profession: 'Director at Good Morning Zang Construction',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
+    img: 'images/elvis.jpg',
   },
   {
     id: 4,
     name: 'louis katche',
-    profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
+    profession: 'Technical Advicer at lT and Services, Limbe',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
+    img: 'images/louis.jpg',
   },
   {
     id: 5,
     name: 'katche festus',
-    profession: `Lorem ipsum dolor sit amet consectetur adipisicing`,
+    profession: 'Student at Emmacroy Technologies',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
+    img: 'images/festus.jpg',
   },
-   
+  {
+    id: 6,
+    name: 'kum paul',
+    profession: 'Student at Emmacroy Technologies',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    img: 'images/eleven.jpeg',
+  },
+  {
+    id: 7,
+    name: 'Abanda Beckley',
+    profession: 'Student at Emmacroy Technologies',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    img: 'images/radivin.jpeg',
+  },
 
 ];
 
@@ -51,15 +64,15 @@ sideBar.addEventListener('click', () => {
 });
 
 // REVIEWS
-const reviewsDom = document.querySelector('.reviews-wrap')
+const reviewsDom = document.querySelector('.reviews-wrap');
 let result = '';
 
 // DISPLAYING REVIEWS
 const displayReviews = (reviews) => {
-  let featureReviews = reviews.slice(reviews.length-3, reviews.length)
+  const featureReviews = reviews.slice(reviews.length - 6, reviews.length);
   featureReviews.map((item) => {
     result += `
-    <div class="review">
+    <article class="review">
         <div class="reviewer-img-wrap">
             <img src=${item.img} alt="">
         </div>
@@ -69,7 +82,7 @@ const displayReviews = (reviews) => {
             <div class="underline"></div>
             <p>${item.text}</p>
         </div>
-   </div>
+   </article>
   `;
     return result;
   });
@@ -77,6 +90,25 @@ const displayReviews = (reviews) => {
   return result;
 };
 
+// BACK TO TOP
+const navbar = document.getElementById('nav');
+const topLink = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+  const scrollHeight = window.pageYOffset;
+  const navHeight = navbar.getBoundingClientRect().height;
+  if (scrollHeight > navHeight) {
+    navbar.classList.add('fixed-nav');
+  } else {
+    navbar.classList.remove('fixed-nav');
+  }
+  if (scrollHeight > 300) {
+    topLink.classList.add('show-link');
+  } else {
+    topLink.classList.remove('show-link');
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
-  displayReviews(reviews)
+  displayReviews(reviews);
 });

@@ -10,38 +10,49 @@
 </head>
 <body>
         <!-- Header -->
-     <header>
+     <header id="header">
         <div class="overlay">
+            <img src="images/gal-react.png" alt="">
             <nav id="nav">
-                <div class="nav-child">
-                    <a href="index.html">
-                        <div id="logo">
-                            <h3>My Logo</h3>
-                        </div>
-                    </a>
-                    <button id="bars">
-                        <i id="open" class="fas fa-bars"></i>
-                    </button>
+                <div class="top-nav">
+                    <ul>
+                        <li class="top-nav-social"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="top-nav-social"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="top-nav-item"><a href="#">English</a></li>
+                        <li class="top-nav-item"><a href="#">signup</a></li>
+                        <li class="top-nav-item"><a href="#">login</a></li> 
+                    </ul>
                 </div>
+                <div class="nav-inner">
+                    <div class="nav-child">
+                        <a href="index.html">
+                            <div class="logo" id="logo">
+                                <h3>My Logo</h3>
+                            </div>
+                        </a>
+                        <button id="bars">
+                            <i id="open" class="fas fa-bars"></i>
+                        </button>
+                    </div>
                 <!-- Nav menu -->
                 <ul class="nav-menu">
-                    <li class="nav-menu-item"><a href="#">home</a</li>
-                    <li class="nav-menu-item"><a href="#about-me">About</a></li> 
+                    <li class="nav-menu-item"><a class="nav-link nav-active" href="index.html">home</a</li>
+                    <li class="nav-menu-item"><a class="nav-link" href="about.html">About</a></li> 
                 </ul>
+
+                </div>
+                
             </nav>
             <!-- Mobile menu -->
              <aside class="sidebar show-sidebar">
                 <button id="close-btn">
-                    <!-- <i id="close" class="fas fa-times fa-2x"></i> -->
                     <img src="images/close-icon.png" alt="">
                 </button>
                  <ul class="mobile-nav-menu">
-                    <li class="nav-menu-item"><a class="nav-link" href="#">home</a></li>
-                    <li class="nav-menu-item"><a class="nav-link" href="#about-me">About</a></li> 
+                    <li class="nav-menu-item"><a class="nav-link nav-active" href="index.html">home</a></li>
+                    <li class="nav-menu-item"><a class="nav-link" href="about.html">About</a></li> 
                 </ul>
              </aside>
-            
-            <!-- End header -->
             <!-- Headline -->
                 <div class="headline-content-wrap">
                     <div class="headline-content">
@@ -57,7 +68,7 @@
                         </div>
                         <div class="headline-purpose">
                             <h2>Web Development Training Center</h2>
-                            <h4><i class="fas fa-at"></i>Cameroon, south-west region, Buea</h4>
+                            <p><i class="fas fa-at"></i> <span>Cameroon, south-west region, Buea</span></p>
                         </div>
                      </div>
                 </div>
@@ -79,7 +90,7 @@
                         <h4>html</h4>
                     </div>
                     <div class="prog-description">
-                        <p>HTML is the standard markup language for Web pages. With HTML, you can create your own Website.</p>
+                        <p>HTML is the standard markup language for Web pages.</p>
                     </div>
                 </div>
             </a>
@@ -91,7 +102,7 @@
                     </div>
                     <div class="prog-description">
                         <p>Bootstrap is the most popular CSS Framework for developing responsive and mobile-first
-                             websites. Bootstrap 4 is the newest version of Bootstrap ...</p>
+                             websites.</p>
                     </div>
                 </div>
             </a>
@@ -102,8 +113,7 @@
                         <h4>CSS</h4>
                     </div>
                     <div class="prog-description">
-                        <p>CSS is the language we use to style an HTML document. It describes how HTML elements
-                             should be displayed on screen, paper, or in other media.</p>
+                        <p>CSS is the language we use to style an HTML document.</p>
                     </div>
                 </div>
             </a>
@@ -114,8 +124,8 @@
                         <h4>javascript</h4>
                     </div>
                     <div class="prog-description">
-                        <p>JavaScript is a scripting or programming language that allows you to implement complex 
-                            features on web pages JavaScript is the world's most popular programming language.</p>
+                        <p>JavaScript is a programming language that allows you to implement complex 
+                            features on a web page.</p>
                     </div>
                 </div>
             </a>
@@ -127,8 +137,8 @@
                     </div>
                     <div class="prog-description">
                         <p>React is an open-source, front end, JavaScript library for building user interfaces or UI 
-                            components. It is maintained by Facebook and a community of individual developers and companies.
-                             React can be used as a base in the development of single-page or mobile applications.</p>
+                            components
+                        </p>
                     </div>
                 </div>
             </a>
@@ -140,6 +150,9 @@
             <h4>join us today!</h4>
         </div>
     </a>
+    <div id="see-all-p">
+      <a class="see-all-program" href="#">see the whole program</a>
+    </div>
 </section>
     <!-- REVIEWS -->
 <section class="reviews">
@@ -152,7 +165,50 @@
         <div class="show-more">
             <button>show more<i class="fas fa-angle-down"></i></button>
         </div>
+    </div>
 </section>
+<!-- PARTNERS -->
+<section class="partners">
+    <div class="reviews-title partners-title">
+        <h4> our partners</h4>
+        <div class="underline"></div>
+    </div>
+    <div class="partners-wrap">
+        <i class="fab fa-google fa-3x"></i>
+        <i class="fab fa-microsoft fa-3x"></i>
+        <i class="fab fa-airbnb fa-3x"></i>
+        <i class="fab fa-amazon fa-3x"></i>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+            <a href="index.html">
+                <div class="logo" id="footer-logo">
+                    <h3>My Logo</h3>
+                </div>
+            </a>
+        <div class="copy-right">
+            <div class="copy-right-mobile">
+                <p>2023 emmacroy Technologies</p>
+                <p>all rights reserved</p>
+            </div>
+            <div class="copy-right-desktop">
+                <p>2023 emmacroy Technologies. all rights reserved</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, possimus Officia, possimus. <br>
+                    consectetur adipisicing elit. Officia, possimus Officia, possimus
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- BACK TO TOP -->
+    <button class="back-to-top  ">
+        <a class="btn" href="#header" >
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </button>
+</footer>
     
  <!-- javascript -->
  <script src="index.js"></script>
