@@ -520,6 +520,10 @@ nav {
 }
 
 .show-more {
+  text-transform: capitalize;
+}
+
+.hide {
   display: none;
 }
 
@@ -588,8 +592,6 @@ footer {
   z-index: -100;
   border: none;
   background: var(--orange);
-
-  /* float: right; */
 }
 
 .back-to-top .fas {
@@ -681,7 +683,8 @@ footer {
   .show-sidebar,
   #close-btn,
   .copy-right-mobile,
-  .about-partners {
+  .about-partners,
+  .show-more {
     display: none !important;
   }
 
