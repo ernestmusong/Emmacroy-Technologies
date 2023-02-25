@@ -66,10 +66,18 @@ sideBar.addEventListener('click', () => {
 // REVIEWS
 const reviewsDom = document.querySelector('.reviews-wrap');
 let result = '';
+let result2 = '';
+const showMore = document.querySelector('#show-more')
+const showLess = document.querySelector('#show-less')
+let stringOne = `show more <i class="fas fa-angle-down"></i>`;
+let stringTwo = `show less <i class="fas fa-angle-up"></i>`;
+showMore.innerHTML = stringOne;
+showLess.innerHTML = stringTwo;
 
 // DISPLAYING REVIEWS
 const displayReviews = (reviews) => {
-  const featureReviews = reviews.slice(reviews.length - 6, reviews.length);
+
+  let featureReviews = reviews.slice(reviews.length - 4, reviews.length);
   featureReviews.map((item) => {
     result += `
     <article class="review">
@@ -86,9 +94,37 @@ const displayReviews = (reviews) => {
   `;
     return result;
   });
-  reviewsDom.innerHTML = result;
+  // Result Two
+  reviews.map(item => {
+    result2 += `
+    <article class="review">
+        <div class="reviewer-img-wrap">
+            <img src=${item.img} alt="">
+        </div>
+        <div class="review-text">
+            <h5>${item.name}</h5>
+            <h5 class="orange-text">${item.profession}</h5>
+            <div class="underline"></div>
+            <p>${item.text}</p>
+        </div>
+   </article>
+  `;
+    return result2;
+  })
+   reviewsDom.innerHTML = result;
   return result;
 };
+
+showMore.addEventListener('click', () => {
+    reviewsDom.innerHTML = result2;
+    showMore.classList.toggle('hide');
+    showLess.classList.toggle('hide');
+})
+showLess.addEventListener('click', () => {
+    reviewsDom.innerHTML = result;
+    showLess.classList.toggle('hide');
+    showMore.classList.toggle('hide');
+})
 
 // BACK TO TOP
 const navbar = document.getElementById('nav');
