@@ -36,20 +36,6 @@
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="#"></a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="#"></a></li>
-  </ul>
-</details>
-
 ### Key Features <a name="key-features"></a>
 - **[key_feature_1]**
 - **[key_feature_2]**
@@ -59,7 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://ernestmusong.github.io/Capstone/)
+- [Live Demo Link](https://ernestmusong.github.io/Emmacroy-Technologies/)
 
 ## 🚀 Project Presentation <a name="live-demo"></a>
 
@@ -78,17 +64,6 @@ sh
   cd my-folder
  git clone https://github.com/ernestmusong/ernestmusong.github.io.git
 
-### Install
-
-Install this project with:
-sh
-  cd ernestmusong.github.io
-  npm install
-### Usage
-
-### Run tests
-
-### Deployment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
