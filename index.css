@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* -------------------------------------------GLOBAL VARIABLES-------------------------------- */
 
@@ -105,6 +106,7 @@ nav {
 .tagline h3 {
   color: #ec5242;
   text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
 }
 
 .about-card p,
@@ -213,7 +215,7 @@ nav {
   font-size: 2rem;
   line-height: 32px;
   font-weight: 800;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   animation: run-right 2s ease;
 }
@@ -856,7 +858,7 @@ footer {
     margin: 0 auto;
   }
 
-  .about-tagline h1 {
+  .about-tagline h2 {
     text-align: center;
   }
 
