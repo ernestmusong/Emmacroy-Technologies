@@ -52,7 +52,7 @@ header {
   background: var(--main-white);
 }
 
-.overlay img {
+.overlay .img-overlay {
   top: 0;
   width: 100%;
   height: 100%;
@@ -89,10 +89,17 @@ nav {
 }
 
 .logo {
-  height: 100%;
-  width: 114px;
-  display: flex;
-  font-size: 1.25rem;
+  height: 48px;
+  width: 50px;
+  position: relative;
+}
+
+
+.logo-img {
+width: 100%;
+height: 100%;
+max-width: 100%;
+position: absolute;
 }
 
 .popup-title-wrap h3 {
@@ -113,11 +120,6 @@ nav {
 .about-card h3 {
   text-align: center;
   color: var(--main-white);
-}
-
-#logo h3 {
-  font-size: 100%;
-  color: #28352f;
 }
 
 /* --------------------------------------MOBILE MENU---------------------------------------------- */
@@ -451,6 +453,43 @@ nav {
 }
 
 /* ----------------------------------------REVIEWS-------------------------------------------- */
+/* Testimonials */
+.testimonial-wrap {
+  padding: 4rem;
+  background: #000;
+  width: 100%;
+  height: 100px;
+}
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonial button {
+  border: none;
+}
+
+.testimonial-img-wrap{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial-img-wrap img {
+  width: 150px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+.testimonial-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-text div {
+  width: 100;
+}
+/* End of Testimonials */
 
 .reviews {
   width: 100%;

@@ -64,67 +64,104 @@ sideBar.addEventListener('click', () => {
 });
 
 // REVIEWS
-const reviewsDom = document.querySelector('.reviews-wrap');
-let result = '';
-let result2 = '';
-const showMore = document.querySelector('#show-more')
-const showLess = document.querySelector('#show-less')
-let stringOne = `show more <i class="fas fa-angle-down"></i>`;
-let stringTwo = `show less <i class="fas fa-angle-up"></i>`;
-showMore.innerHTML = stringOne;
-showLess.innerHTML = stringTwo;
+// const reviewsDom = document.querySelector('.reviews-wrap');
+// let result = '';
+// let result2 = '';
+// const showMore = document.querySelector('#show-more')
+// const showLess = document.querySelector('#show-less')
+// let stringOne = `show more <i class="fas fa-angle-down"></i>`;
+// let stringTwo = `show less <i class="fas fa-angle-up"></i>`;
+// showMore.innerHTML = stringOne;
+// showLess.innerHTML = stringTwo;
 
 // DISPLAYING REVIEWS
-const displayReviews = (reviews) => {
+// const displayReviews = (reviews) => {
 
-  let featureReviews = reviews.slice(reviews.length - 4, reviews.length);
-  featureReviews.map((item) => {
-    result += `
-    <article class="review">
-        <div class="reviewer-img-wrap">
-            <img src=${item.img} alt="">
-        </div>
-        <div class="review-text">
-            <h5>${item.name}</h5>
-            <h5 class="orange-text">${item.profession}</h5>
-            <div class="underline"></div>
-            <p>${item.text}</p>
-        </div>
-   </article>
-  `;
-    return result;
-  });
-  // Result Two
-  reviews.map(item => {
-    result2 += `
-    <article class="review">
-        <div class="reviewer-img-wrap">
-            <img src=${item.img} alt="">
-        </div>
-        <div class="review-text">
-            <h5>${item.name}</h5>
-            <h5 class="orange-text">${item.profession}</h5>
-            <div class="underline"></div>
-            <p>${item.text}</p>
-        </div>
-   </article>
-  `;
-    return result2;
-  })
-   reviewsDom.innerHTML = result;
-  return result;
-};
+//   let featureReviews = reviews.slice(reviews.length - 4, reviews.length);
+//   featureReviews.map((item) => {
+//     result += `
+//     <article class="review">
+//         <div class="reviewer-img-wrap">
+//             <img src=${item.img} alt="">
+//         </div>
+//         <div class="review-text">
+//             <h5>${item.name}</h5>
+//             <h5 class="orange-text">${item.profession}</h5>
+//             <div class="underline"></div>
+//             <p>${item.text}</p>
+//         </div>
+//    </article>
+//   `;
+//     return result;
+//   });
+//   // Result Two
+//   reviews.map(item => {
+//     result2 += `
+//     <article class="review">
+//         <div class="reviewer-img-wrap">
+//             <img src=${item.img} alt="">
+//         </div>
+//         <div class="review-text">
+//             <h5>${item.name}</h5>
+//             <h5 class="orange-text">${item.profession}</h5>
+//             <div class="underline"></div>
+//             <p>${item.text}</p>
+//         </div>
+//    </article>
+//   `;
+//     return result2;
+//   })
+//    reviewsDom.innerHTML = result;
+//   return result;
+// };
 
-showMore.addEventListener('click', () => {
-    reviewsDom.innerHTML = result2;
-    showMore.classList.toggle('hide');
-    showLess.classList.toggle('hide');
-})
-showLess.addEventListener('click', () => {
-    reviewsDom.innerHTML = result;
-    showLess.classList.toggle('hide');
-    showMore.classList.toggle('hide');
-})
+// showMore.addEventListener('click', () => {
+//     reviewsDom.innerHTML = result2;
+//     showMore.classList.toggle('hide');
+//     showLess.classList.toggle('hide');
+// })
+// showLess.addEventListener('click', () => {
+//     reviewsDom.innerHTML = result;
+//     showLess.classList.toggle('hide');
+//     showMore.classList.toggle('hide');
+// })
+
+  //slect items
+  const personImg = document.getElementById("person-img");
+  const author = document.getElementById("author");
+  const job = document.getElementById("job");
+  const info = document.getElementById("info");
+  const prevBtn = document.querySelector("#prevBtn");
+  const nextBtn = document.querySelector("#nextBtn");
+  console.log(nextBtn)
+ 
+
+  //Testimonials
+
+  let currentItem = 0;
+  function showPerson(arr) {
+      const {img, name, profession, text } = arr[currentItem];
+      personImg.src = img;
+      author.textContent = name;
+      job.textContent = profession;
+      info.textContent = text;
+  }
+
+ nextPerson = () => {
+  currentItem++
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson(reviews)
+ }
+
+ prevPerson = () => {
+  currentItem--
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson(reviews)
+ }
 
 // BACK TO TOP
 const navbar = document.getElementById('nav');
@@ -146,5 +183,11 @@ window.addEventListener('scroll', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  displayReviews(reviews);
+  showPerson(reviews);
+});
+nextBtn.addEventListener("click", () => {
+  nextPerson()
+});
+prevBtn.addEventListener("click", () => {
+  prevPerson()
 });
