@@ -22,6 +22,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -367,6 +368,7 @@ position: absolute;
   width: 100%;
   background: var(--main-black);
   padding: 50px 12px;
+  margin-bottom: 4rem;
 }
 
 .program-title {
@@ -452,8 +454,68 @@ position: absolute;
   text-transform: capitalize;
 }
 
-/* ----------------------------------------REVIEWS-------------------------------------------- */
-/* Testimonials */
+/* -------------------------------------------------------------counter */
+.counter-section {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.counter {
+  padding-right: 0;
+  padding-left: 0;
+  background: url(https://images.unsplash.com/photo-1589416953443-610b87c5d2e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)
+  center/cover no-repeat;
+
+}
+.counter-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #000;
+  margin: 0 auto;
+  opacity: 0.7;
+  padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-item i {
+   color: var(--orange);
+}
+
+.counter-item h6 {
+  color: var(--main-white);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.counter .value {
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+}
+/* End of counter */
+
+
+ 
+/* ---------------------------------------------------------Testimonials */
+
+.testimonials {
+  width: 100%;
+  background: var(--main-black);
+  padding: 50px 12px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
 .testimonial-wrap {
   background: var(--main-black);
   width: 100%;
@@ -461,8 +523,6 @@ position: absolute;
    flex-direction: column;
    align-items: center;
    gap: 2rem;
-   padding-top: 4rem;
-   padding-bottom: 4rem;
 }
 .testimonial {
   display: flex;
@@ -514,12 +574,16 @@ position: absolute;
   color: var(--orange);
   text-transform: capitalize;
 }
+
+.testimonial-text #author {
+  font-size: 1.25rem;
+}
 .testimonial-text #email {
   color: var(--softGrey);
   text-transform: lowercase;
   font-size: 1rem;
 }
-/* End of Testimonials */
+/* ----------------------------------------------------------End of Testimonials */
 
 .reviews {
   width: 100%;
@@ -538,6 +602,7 @@ position: absolute;
 
 .reviews-title h4 {
   text-transform: uppercase;
+  color: var(--main-white);
 }
 
 .reviews-wrap {
@@ -627,6 +692,7 @@ position: absolute;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .partners-wrap {
@@ -645,6 +711,41 @@ position: absolute;
 .partners-wrap i,
 .partners-title h4 {
   color: var(--dark-grey);
+}
+
+/* -------------------------------------------------CONTACT US SECTION */
+
+.contact-us-sec {
+  width: 100%;
+  background: var(--main-black);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.contact-row h2 {
+  color: var(--main-white);
+  text-transform: capitalize;
+}
+
+.contact-button {
+  background: var(--orange);
+  color: var(--main-white);
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.contact-button:hover {
+  background: var(--main-white);
+  border: 2px solid var(--orange);
+  color: var(--orange);
 }
 
 /* ----------------------------------------------FOOTER------------------------------------------------------- */
@@ -814,7 +915,10 @@ footer {
     font-size: 1.3rem;
     color: var(--secondary-black);
   }
-
+.testimonials,
+.contact-us-sec {
+  width: 75%;
+}
   /* PROGRAMS */
 
   .programs {
@@ -910,6 +1014,17 @@ footer {
 
   .review-text {
     align-items: flex-start;
+  }
+
+  /* COUNTER */
+  .counter-overlay {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 4rem;
+   padding-bottom: 4rem;
+  }
+  .counter .value {
+    margin-top: 1.5rem;
   }
 
   /* ABOUT PAGE */
