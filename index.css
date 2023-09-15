@@ -455,10 +455,14 @@ position: absolute;
 /* ----------------------------------------REVIEWS-------------------------------------------- */
 /* Testimonials */
 .testimonial-wrap {
-  padding: 4rem;
-  background: #000;
+  background: var(--main-black);
   width: 100%;
-  height: 100px;
+  display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   padding-top: 4rem;
+   padding-bottom: 4rem;
 }
 .testimonial {
   display: flex;
@@ -467,6 +471,8 @@ position: absolute;
 }
 .testimonial button {
   border: none;
+  color: var(--orange);
+  font-size: 1.5rem;
 }
 
 .testimonial-img-wrap{
@@ -487,7 +493,31 @@ position: absolute;
 }
 
 .testimonial-text div {
-  width: 100;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.testimonial-text h6 {
+  color: var(--main-white);
+  text-transform: uppercase;
+}
+
+.testimonial-text p {
+  color: var(--main-white);
+  text-align: center;
+}
+
+.testimonial-text #job {
+  color: var(--orange);
+  text-transform: capitalize;
+}
+.testimonial-text #email {
+  color: var(--softGrey);
+  text-transform: lowercase;
+  font-size: 1rem;
 }
 /* End of Testimonials */
 
