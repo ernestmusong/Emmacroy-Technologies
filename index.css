@@ -33,6 +33,10 @@ li {
   list-style-type: none;
 }
 
+.main-heading{
+  color: var(--secondary-black) !important;
+}
+
 /* ----------------------------------------HEADER---------------------------------------------- */
 
 header {
@@ -252,6 +256,31 @@ position: absolute;
   animation: pop-up-text 4s linear;
 }
 
+.read_more_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+ 
+#read_more {
+  background: var(--orange);
+  color: var(--main-white);
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  z-index: 9999;
+}
+
+#read_more:hover {
+  background: var(--main-white);
+  border: 2px solid var(--orange);
+  color: var(--orange);
+}
+
+
 /* ---------------------------------------ABOUT PAGE---------------------------------------------- */
 
 .about-overlay img {
@@ -382,6 +411,7 @@ position: absolute;
 
 .program-title h4 {
   color: var(--main-white);
+  text-transform: uppercase;
 }
 
 .underline {
@@ -454,6 +484,60 @@ position: absolute;
   text-transform: capitalize;
 }
 
+/* -------------------------------------------------------------LEARNING */
+ .learning-section {
+  width: 100%;
+  margin-bottom: 4rem;
+ }
+
+ .learning-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 2rem;
+ }
+
+ .article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .article i {
+  color: var(--orange);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+ }
+
+ .article h6 {
+  color: var(--secondary-black);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+ }
+
+ .article p {
+  text-align: center;
+ }
+
+ /* -----------------------------------------------------------CERTIFICATE */
+
+ .certificate {
+  margin-bottom: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+ }
+
+ .certificate .title {
+  text-transform: uppercase;
+ }
+ .certificate span {
+  color: var(--orange);
+  text-transform: uppercase;
+ }
+ .certificate p {
+  margin-top: 0.75rem;
+ }
 /* -------------------------------------------------------------counter */
 .counter-section {
   width: 100%;
@@ -724,9 +808,9 @@ position: absolute;
 
 .contact-row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
-  flex-wrap: wrap;
   padding: 2rem;
 }
 
@@ -739,9 +823,12 @@ position: absolute;
   background: var(--orange);
   color: var(--main-white);
   text-transform: capitalize;
+  border: none;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
 }
+
 .contact-button:hover {
   background: var(--main-white);
   border: 2px solid var(--orange);
@@ -825,27 +912,29 @@ footer {
   }
 
   .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: var(--main-black);
     height: 50px;
     width: 100%;
-    padding-right: 4rem;
-     
+    padding-right: 4rem; 
+    padding-left: 4rem; 
   }
 
   .top-nav ul {
-    float: right;
     display: flex;
     gap: 1rem;
     height: 100%;
     align-items: center;
   }
 
-  .top-nav-social a {
-    color: var(--main-white);
-  }
-
   .top-nav-item a {
     color: var(--softGrey);
+  }
+
+  .top-nav-item a:hover {
+    color: var(--main-white);
   }
 
   nav {
@@ -1082,6 +1171,28 @@ footer {
   .about-headline-purpose p {
     font-size: 90%;
   }
+
+  .contact-row {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .contact-button {
+    padding: 1rem;
+  }
+
+  /* LEARNING */
+
+  .learning-content {
+    flex-direction: row;
+    padding-top: 2rem;
+    gap: 2rem;
+   }
+
+   .certificate-content {
+    width: 40%;
+   }
 
   /* FOOTER */
 
