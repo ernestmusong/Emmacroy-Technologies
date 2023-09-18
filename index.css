@@ -411,9 +411,11 @@ position: absolute;
   padding-bottom: 14px;
 }
 
-.program-title h4 {
+.program-title h2 {
   color: var(--main-white);
   text-transform: uppercase;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 .underline {
@@ -549,6 +551,11 @@ position: absolute;
   margin-top: 0.75rem;
  }
 
+ /*--------------------------------------------------------------- wordpress */
+
+ .wordpress-content {
+  padding: 0 0.5rem;
+ }
 /* -------------------------------------------------------------counter */
 .counter-section {
   width: 100%;
