@@ -116,7 +116,7 @@ position: absolute;
 }
 
 .tagline h3 {
-  color: #ec5242;
+  color: var(--orange);
   text-transform: capitalize;
   font-family: 'Poppins', sans-serif;
 }
@@ -195,7 +195,7 @@ position: absolute;
 /* -------------------------------------------HEADLINE---------------------------------------------------- */
 .headline-content-wrap {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   padding-left: 24px;
   padding-right: 24px;
   margin: 0 auto;
@@ -218,8 +218,8 @@ position: absolute;
 }
 
 .tagline h2 {
-  color: #ec5242;
-  font-size: 2rem;
+  color: var(--orange);
+  font-size: 1.25rem;
   line-height: 32px;
   font-weight: 800;
   font-family: 'Poppins', sans-serif;
@@ -237,6 +237,7 @@ position: absolute;
 .headline-purpose h2 {
   color: #272a31;
   animation: pop-up-text 6s linear;
+  text-transform: capitalize;
 }
 
 .headline-purpose h4,
@@ -269,9 +270,10 @@ position: absolute;
   text-transform: capitalize;
   border-radius: 5px;
   border: none;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1.25rem;
-  z-index: 9999;
+  font-size: 1.25rem;
+  z-index: 1;
 }
 
 #read_more:hover {
@@ -424,6 +426,12 @@ position: absolute;
   align-items: center;
   flex-direction: column;
   gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.programs p {
+  color: var(--main-white);
+  text-align: center;
 }
 
 .card-url {
@@ -487,6 +495,7 @@ position: absolute;
 /* -------------------------------------------------------------LEARNING */
  .learning-section {
   width: 100%;
+  margin:  0 auto;
   margin-bottom: 4rem;
  }
 
@@ -523,6 +532,7 @@ position: absolute;
  /* -----------------------------------------------------------CERTIFICATE */
 
  .certificate {
+  margin: 0 auto;
   margin-bottom: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -538,10 +548,10 @@ position: absolute;
  .certificate p {
   margin-top: 0.75rem;
  }
+
 /* -------------------------------------------------------------counter */
 .counter-section {
   width: 100%;
-  margin-bottom: 4rem;
 }
 .counter {
   padding-right: 0;
@@ -598,7 +608,6 @@ position: absolute;
   background: var(--main-black);
   padding: 50px 12px;
   margin: 0 auto;
-  margin-bottom: 4rem;
 }
 .testimonial-wrap {
   background: var(--main-black);
@@ -884,7 +893,6 @@ footer {
 /* ------------------------------------------Media queries------------------------------------------ */
 @media screen and (max-width: 767px) {
   .nav-menu,
-  #logo,
   #see-all-p,
   .copy-right-desktop,
   .about-underline,
@@ -902,6 +910,14 @@ footer {
   }
 
   .about-tagline {
+    padding-bottom: 2rem;
+  }
+
+  .nav-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
@@ -983,8 +999,8 @@ footer {
 
   .tagline h2 {
     letter-spacing: 0.3;
-    font-size: 68px;
-    line-height: 68px;
+    font-size: 44px;
+    line-height: 44px;
   }
 
   .tagline h3 {
@@ -1004,8 +1020,14 @@ footer {
     font-size: 1.3rem;
     color: var(--secondary-black);
   }
-.testimonials,
-.contact-us-sec {
+
+  .read_more_wrap {
+    justify-content: flex-start;
+  }
+
+.contact-us-sec,
+.learning-section,
+.certificate {
   width: 75%;
 }
   /* PROGRAMS */
@@ -1175,10 +1197,6 @@ footer {
   .contact-row {
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
-  }
-
-  .contact-button {
     padding: 1rem;
   }
 
@@ -1192,6 +1210,10 @@ footer {
 
    .certificate-content {
     width: 40%;
+   }
+
+   .partners {
+    padding-top: 6rem;
    }
 
   /* FOOTER */
