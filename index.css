@@ -257,14 +257,16 @@ position: absolute;
   animation: pop-up-text 4s linear;
 }
 
-.read_more_wrap {
+.read_more_wrap,
+.join-us-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
 }
  
-#read_more {
+#read_more, 
+.join-us {
   background: var(--orange);
   color: var(--main-white);
   text-transform: capitalize;
@@ -276,7 +278,8 @@ position: absolute;
   z-index: 1;
 }
 
-#read_more:hover {
+#read_more:hover,
+.join-us:hover {
   background: var(--main-white);
   border: 2px solid var(--orange);
   color: var(--orange);
@@ -980,7 +983,8 @@ footer {
   .show-sidebar,
   #close-btn,
   .copy-right-mobile,
-  .about-partners {
+  .about-partners,
+  .join-us-mobile {
     display: none !important;
   }
 
