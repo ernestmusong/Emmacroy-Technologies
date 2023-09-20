@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins&display=swap');
+ 
 /* -------------------------------------------GLOBAL VARIABLES-------------------------------- */
 
 :root {
@@ -21,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -114,12 +115,6 @@ position: absolute;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   line-height: 44px;
-}
-
-.tagline h3 {
-  color: var(--orange);
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
 }
 
 .about-card p,
@@ -218,12 +213,15 @@ position: absolute;
   gap: 12px;
 }
 
+.tagline h1 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
 .tagline h2 {
   color: var(--orange);
   font-size: 1.25rem;
-  line-height: 32px;
   font-weight: 800;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Abyssinica SIL', serif;
   text-transform: uppercase;
   animation: run-right 2s ease;
 }
@@ -293,11 +291,12 @@ position: absolute;
   text-align: center;
   color: var(--orange);
   text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
 }
 
 .about-tagline h1 {
   font-size: 1.5rem;
+  font-family: 'Abyssinica SIL', serif;
+  font-weight: bold;
 }
 
 .aboaut-content {
@@ -1017,16 +1016,15 @@ footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-
-  .tagline h3 {
+  .tagline h1 {
+    font-size: 2rem;
+  }
+  .tagline h2 {
     letter-spacing: 0.3;
     font-size: 44px;
     line-height: 44px;
   }
 
-  .tagline h1 {
-    font-size: 2rem;
-  }
 
   .headline-para {
     width: 50%;
