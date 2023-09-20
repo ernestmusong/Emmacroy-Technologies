@@ -49,7 +49,7 @@ header {
 
 .overlay {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   backdrop-filter: blur(5px);
   top: 0;
   padding-bottom: 70px;
@@ -283,6 +283,7 @@ position: absolute;
   font-size: 1.25rem;
   font-size: 1.25rem;
   z-index: 1;
+  animation: pop-up-text 8s linear;
 }
 
 #read_more:hover,
