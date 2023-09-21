@@ -270,6 +270,7 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
  
 #read_more, 
@@ -419,7 +420,10 @@ position: absolute;
 .programs {
   width: 100%;
   background: var(--main-black);
-  padding: 50px 12px;
+  padding-top: 50px;
+  padding-bottom: 1rem;
+  padding-left: 12px;
+  padding-right: 12px;
   margin-bottom: 4rem;
 }
 
@@ -468,15 +472,13 @@ position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 10px 12px;
 }
 
 .icon-wrap {
   display: flex;
   align-items: center;
+  flex-direction: column;
   width: 30%;
   gap: 5px;
 }
@@ -502,7 +504,7 @@ position: absolute;
   font-size: 90%;
 }
 
-.join-us-btn {
+/* .join-us-btn {
   width: 70%;
   background: var(--orange);
   display: flex;
@@ -513,7 +515,7 @@ position: absolute;
   margin-top: 50px;
   color: var(--main-white);
   text-transform: capitalize;
-}
+} */
 
 /* -------------------------------------------------------------LEARNING */
  .learning-section {
@@ -561,15 +563,17 @@ position: absolute;
   padding-right: 0.5rem;
  }
 
- .certificate .title {
-  text-transform: uppercase;
- }
- .certificate span {
+ .certificate .response {
   color: var(--orange);
-  text-transform: uppercase;
+ }
+ .certificate .title {
+  font-size: 1rem;
  }
  .certificate p {
   margin-top: 0.75rem;
+ }
+ .certificate .note {
+  font-weight: bold;
  }
 
  /*--------------------------------------------------------------- wordpress */
@@ -1229,6 +1233,9 @@ footer {
 
    .certificate-content {
     width: 40%;
+   }
+   .certificate .title {
+    font-size: 1.5rem;
    }
 
    .partners {
