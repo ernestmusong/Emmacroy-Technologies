@@ -195,6 +195,7 @@ position: absolute;
   left: 0;
   right: 0;
   position: fixed;
+  transition: 2s ease;
 }
 
 /* -------------------------------------------HEADLINE---------------------------------------------------- */
