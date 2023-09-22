@@ -300,14 +300,15 @@ position: absolute;
 
 .about-tagline {
   text-align: center;
-  color: var(--orange);
   text-transform: capitalize;
+  color: var(--orange);
 }
 
 .about-tagline h1 {
   font-size: 1.5rem;
   font-family: 'Abyssinica SIL', serif;
   font-weight: bold;
+  color: var(--main-black);
 }
 
 .aboaut-content {
