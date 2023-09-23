@@ -56,7 +56,6 @@ const reviews = [
     img: 'images/radivin.jpeg',
     email: "example@gmail.com"
   },
-
 ];
 
 // SIDE-BAR
@@ -128,6 +127,7 @@ window.addEventListener('scroll', () => {
     topLink.classList.remove('show-link');
   }
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   showPerson(reviews);
