@@ -3,7 +3,7 @@ const reviews = [
   {
     id: 1,
     name: 'Mbah denzel',
-    profession: 'general manager at All cocoa business, Kumba',
+    profession: 'student',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/denzel.jpg',
     email: "example@gmail.com"
@@ -11,7 +11,7 @@ const reviews = [
   {
     id: 2,
     name: 'Derick dice sk',
-    profession: 'CEO at Green Engineering and Consultancy, Buea',
+    profession: 'student',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/derick.jpg',
     email: "example@gmail.com"
@@ -19,7 +19,7 @@ const reviews = [
   {
     id: 3,
     name: 'katche elvis',
-    profession: 'Director at Good Morning Zang Construction',
+    profession: 'client',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/elvis.jpg',
     email: "example@gmail.com"
@@ -27,7 +27,7 @@ const reviews = [
   {
     id: 4,
     name: 'louis katche',
-    profession: 'Technical Advicer at lT and Services, Limbe',
+    profession: 'client',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/louis.jpg',
     email: "example@gmail.com"
@@ -35,7 +35,7 @@ const reviews = [
   {
     id: 5,
     name: 'katche festus',
-    profession: 'Student at Emmacroy Technologies',
+    profession: 'Student',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/festus.jpg',
     email: "example@gmail.com"
@@ -43,17 +43,9 @@ const reviews = [
   {
     id: 6,
     name: 'kum paul',
-    profession: 'Student at Emmacroy Technologies',
+    profession: 'client',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/eleven.jpeg',
-    email: "example@gmail.com"
-  },
-  {
-    id: 7,
-    name: 'Abanda Beckley',
-    profession: 'Student at Emmacroy Technologies',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/radivin.jpeg',
     email: "example@gmail.com"
   },
 ];
@@ -128,6 +120,14 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// SHOW MODAL
+
+const reviewBtn = document.getElementById('review-btn');
+const showModal = () => {
+  const modal = document.querySelector('.modal');
+  modal.style.display='block'
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   showPerson(reviews);
@@ -138,3 +138,4 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
   prevPerson()
 });
+reviewBtn.addEventListener("click", showModal)
