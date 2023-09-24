@@ -1212,6 +1212,14 @@ footer {
     height: 40px;
   }
 
+  .nav-menu button {
+    width: 200px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  
+     
+  }
+
   .nav-menu-item {
     margin-right: 1rem;
   }
