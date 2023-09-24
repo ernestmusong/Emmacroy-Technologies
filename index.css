@@ -1499,6 +1499,12 @@ footer {
     padding-right: 260px;
   }
 
+  #close-modal {
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+  }
+
   /* FOOTER */
 
   footer {

@@ -69,11 +69,8 @@ sideBar.addEventListener('click', () => {
   const personEmail = document.querySelector('#email')
   const prevBtn = document.querySelector("#prevBtn");
   const nextBtn = document.querySelector("#nextBtn");
-  console.log(nextBtn)
- 
-
+  
   //Testimonials
-
   let currentItem = 0;
   function showPerson(arr) {
       const {img, name, profession, text, email } = arr[currentItem];
@@ -125,6 +122,7 @@ window.addEventListener('scroll', () => {
 const reviewBtn = document.getElementById('review-btn');
 const modal = document.querySelector('.popup-overlay');
 const closeModal = document.querySelector('#close-modal');
+
 const toggleModal = () => {
   modal.classList.toggle('hide');
 }

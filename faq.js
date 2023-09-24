@@ -90,9 +90,20 @@ window.addEventListener('scroll', () => {
     displayAccordions(accordions);
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
-    displayAccordions(accordions);
-    console.log(accordions)
-  });
+  const reviewBtn = document.getElementById('review-btn');
+const modal = document.querySelector('.popup-overlay');
+const closeModal = document.querySelector('#close-modal');
+const toggleModal = () => {
+  modal.classList.toggle('hide');
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  displayAccordions(accordions);
+});
+ 
+reviewBtn.addEventListener("click", toggleModal)
+closeModal.addEventListener('click', toggleModal)
+
   
   
