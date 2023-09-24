@@ -462,13 +462,17 @@ position: absolute;
   color: var(--orange);
 }
 
-.hide {
-  display: none;
-}
-
 .answer {
   padding-left: 14px;
   padding-right: 14px;
+  height: auto;
+  transition: 2s linear;
+}
+
+.hide-answer {
+  height: 0;
+  overflow: hidden;
+  transition: 2s linear;
 }
 
 /* --------------------------------------CONTACT PAGE */
@@ -1076,6 +1080,10 @@ input:focus:invalid {
   color: var(--secondary-black);
 }
 
+.hide {
+  display: none;
+}
+
 
 /* ----------------------------------------------FOOTER------------------------------------------------------- */
 
@@ -1201,7 +1209,8 @@ footer {
   #close-btn,
   .copy-right-mobile,
   .about-partners,
-  .join-us-mobile {
+  .join-us-mobile,
+  .nav-child .nav-btn {
     display: none !important;
   }
 
