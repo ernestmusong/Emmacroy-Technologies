@@ -120,22 +120,20 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// SHOW MODAL
+//MODAL
 
 const reviewBtn = document.getElementById('review-btn');
-const showModal = () => {
-  const modal = document.querySelector('.modal');
-  modal.style.display='block'
+const modal = document.querySelector('.popup-overlay');
+const closeModal = document.querySelector('#close-modal');
+const toggleModal = () => {
+  modal.classList.toggle('hide');
 }
 
 
 document.addEventListener('DOMContentLoaded', () => {
   showPerson(reviews);
 });
-nextBtn.addEventListener("click", () => {
-  nextPerson()
-});
-prevBtn.addEventListener("click", () => {
-  prevPerson()
-});
-reviewBtn.addEventListener("click", showModal)
+nextBtn.addEventListener("click", nextPerson);
+prevBtn.addEventListener("click", prevPerson);
+reviewBtn.addEventListener("click", toggleModal)
+closeModal.addEventListener('click', toggleModal)
