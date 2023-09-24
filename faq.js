@@ -1,18 +1,18 @@
 const accordions = [
     {
-      question: 'First question',
+      question: 'What is Emmacroy Technologies cost and tuition ?',
       answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos
       incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi,
       sapiente, nostrum`,
       isOpen: false,
     },
     {
-      question: 'Second question',
+      question: 'Can I pay for a single course ?',
       answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos
       incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi,
       sapiente, nostrum`,
       isOpen: false,
-    }
+    },
   ]
 
   // SIDE-BAR
