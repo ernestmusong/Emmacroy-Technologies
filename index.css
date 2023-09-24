@@ -1084,7 +1084,6 @@ input:focus:invalid {
   display: none;
 }
 
-
 /* ----------------------------------------------FOOTER------------------------------------------------------- */
 
 footer {
@@ -1104,12 +1103,37 @@ footer {
   width: 80%;
 }
 
+/* -----------------------------------------------WHATSAPP */
+
+.whatsappbutton {
+  background-color: #7ACC72;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 7px 20px;
+  bottom: 1rem;
+  right: 1rem;
+  width: fit-content;
+  margin: auto;
+  cursor: pointer;
+  position: fixed;
+ }
+
+	.whatsappbutton span {
+    vertical-align: text-bottom !important;
+   }
+
+	.fa-whatsapp { margin-right: 10px; }
+
 /* Back to top */
 .back-to-top {
   font-size: 1.25rem;
   position: fixed;
   bottom: 1rem;
-  right: 1rem;
+  left: 1rem;
   width: 2rem;
   height: 2rem;
   display: flex;
