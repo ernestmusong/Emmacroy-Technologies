@@ -54,9 +54,10 @@ window.addEventListener('scroll', () => {
       const {question, answer, isOpen} = item;
       const index = arr.indexOf(item)
       item.id = index
-      const button = isOpen ? `<button class="open-acc" onclick="closeAccordion(${item.id})">-</button>` :
-       ` <button class="close-acc" onclick="openAccordion(${item.id})">+</button>`
-       const myClass  = isOpen ? 'answer' : 'hide-answer';
+      let openButton = `<button class="close-acc" onclick="openAccordion(${item.id})">+</button>`;
+      let closeButton = `<button class="open-acc" onclick="closeAccordion(${item.id})">-</button>`;
+      const button = isOpen ? closeButton : openButton;
+      const myClass  = isOpen ? 'answer' : 'hide-answer';
       result += `
       <div class="accordion-item">
         <div class="question">
