@@ -1106,7 +1106,7 @@ footer {
 /* -----------------------------------------------WHATSAPP */
 
 .whatsappbutton {
-  /* background-color: #7ACC72; */
+  background-color: var(--white);
   color: #7ACC72;
   border:  none;
   text-align: center;

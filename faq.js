@@ -7,7 +7,28 @@ const accordions = [
       isOpen: false,
     },
     {
+      question: 'In how many installments can I pay for tuition ?',
+      answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos
+      incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi,
+      sapiente, nostrum`,
+      isOpen: false,
+    },
+    {
       question: 'Can I pay for a single course ?',
+      answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos
+      incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi,
+      sapiente, nostrum`,
+      isOpen: false,
+    },
+    {
+      question: 'Will I be issued a certificate upon completion ?',
+      answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos
+      incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi,
+      sapiente, nostrum`,
+      isOpen: false,
+    },
+    {
+      question: 'I have no previous knowledge in coding, can I join the program ?',
       answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos
       incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi,
       sapiente, nostrum`,
