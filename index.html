@@ -408,7 +408,10 @@
     <h2>Add a review</h2>
     <div class="form-wrapper">
         <form action="https://formspree.io/f/maygpvdz"
-              method="POST" class="contact-form review-form">
+              method="POST"
+              class="contact-form review-form"
+              enctype="multipart/form-data"
+              >
             <ul>
                 <li>
                     <label for="name">
@@ -687,7 +690,7 @@
                 <li>
                     <label for="image">
                         Your photo
-                        <input type="file" id="image" name="image" required>
+                        <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/jpg" required>
                     </label>
                 </li>
                 <li>
