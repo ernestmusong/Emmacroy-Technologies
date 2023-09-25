@@ -4,6 +4,7 @@ const reviews = [
     id: 1,
     name: 'Mbah denzel',
     profession: 'student',
+    country: 'Cameroon',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/denzel.jpg',
     email: "example@gmail.com"
@@ -12,6 +13,7 @@ const reviews = [
     id: 2,
     name: 'Derick dice sk',
     profession: 'student',
+    country: 'Cameroon',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/derick.jpg',
     email: "example@gmail.com"
@@ -20,6 +22,7 @@ const reviews = [
     id: 3,
     name: 'katche elvis',
     profession: 'client',
+    country: 'Cameroon',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/elvis.jpg',
     email: "example@gmail.com"
@@ -28,6 +31,7 @@ const reviews = [
     id: 4,
     name: 'louis katche',
     profession: 'client',
+    country: 'Cameroon',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/louis.jpg',
     email: "example@gmail.com"
@@ -36,6 +40,7 @@ const reviews = [
     id: 5,
     name: 'katche festus',
     profession: 'Student',
+    country: 'Cameroon',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/festus.jpg',
     email: "example@gmail.com"
@@ -44,6 +49,7 @@ const reviews = [
     id: 6,
     name: 'kum paul',
     profession: 'client',
+    country: 'Cameroon',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: 'images/eleven.jpeg',
     email: "example@gmail.com"
@@ -66,6 +72,7 @@ sideBar.addEventListener('click', () => {
   const author = document.getElementById("author");
   const job = document.getElementById("job");
   const info = document.getElementById("info");
+  const personCountry = document.querySelector('#country')
   const personEmail = document.querySelector('#email')
   const prevBtn = document.querySelector("#prevBtn");
   const nextBtn = document.querySelector("#nextBtn");
@@ -73,12 +80,13 @@ sideBar.addEventListener('click', () => {
   //Testimonials
   let currentItem = 0;
   function showPerson(arr) {
-      const {img, name, profession, text, email } = arr[currentItem];
+      const {img, name, profession, text, email, country } = arr[currentItem];
       personImg.src = img;
       author.textContent = name;
       job.textContent = profession;
       info.textContent = text;
       personEmail.textContent = email;
+      personCountry.textContent = country;
   }
 
  nextPerson = () => {

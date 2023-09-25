@@ -195,7 +195,6 @@ position: absolute;
   left: 0;
   right: 0;
   position: fixed;
-  transition: 2s ease;
 }
 
 /* -------------------------------------------HEADLINE---------------------------------------------------- */
@@ -510,7 +509,8 @@ position: absolute;
   color: #091e42;
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form select {
   border: 1px solid #d0d9d4;
   height: 48px;
   width: 100%;
@@ -850,7 +850,8 @@ input:focus:invalid {
   text-align: center;
 }
 
-.testimonial-text #job {
+.testimonial-text #job,
+.testimonial-text #country {
   color: var(--orange);
   text-transform: capitalize;
 }
@@ -1078,6 +1079,10 @@ input:focus:invalid {
 .review-form label {
   font-size: 1.25rem;
   color: var(--secondary-black);
+}
+.review-form select {
+  color: var(--softGrey);
+  text-transform: capitalize;
 }
 
 .hide {
