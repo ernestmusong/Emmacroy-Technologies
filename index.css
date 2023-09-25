@@ -1106,16 +1106,15 @@ footer {
 /* -----------------------------------------------WHATSAPP */
 
 .whatsappbutton {
-  background-color: #7ACC72;
-  border: none;
-  color: white;
+  /* background-color: #7ACC72; */
+  color: #7ACC72;
+  border:  none;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
+  bottom: 0.5rem;
+  right: 0;
   border-radius: 25px;
-  padding: 7px 20px;
-  bottom: 1rem;
-  right: 1rem;
   width: fit-content;
   margin: auto;
   cursor: pointer;
@@ -1124,9 +1123,8 @@ footer {
 
 	.whatsappbutton span {
     vertical-align: text-bottom !important;
+    font-size: 0.75rem;
    }
-
-	.fa-whatsapp { margin-right: 10px; }
 
 /* Back to top */
 .back-to-top {
@@ -1529,6 +1527,25 @@ footer {
     font-size: 2rem;
   }
 
+  .whatsappbutton {
+    background-color: #7ACC72;
+    color: var(--white);
+    text-align: center;
+    font-size: 1rem;
+    padding: 7px 20px;
+    bottom: 1rem;
+    right: 1rem;
+     
+   }
+  
+    .whatsappbutton span {
+      font-size: 1rem;
+     }
+  
+    .fa-whatsapp {
+      margin-right: 10px;
+      }
+  
   /* FOOTER */
 
   footer {
