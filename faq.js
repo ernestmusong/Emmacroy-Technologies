@@ -47,18 +47,21 @@ sideBar.addEventListener('click', () => {
   sideBar.classList.toggle('sidebar');
 });
 
-// BACK TO TOP
+// SCROLL EFFECTS
 const navbar = document.getElementById('nav');
 const header = document.getElementById('header');
 const topLink = document.querySelector('.back-to-top');
+const infoWrap = document.querySelector('.info-wrapper');
 
 window.addEventListener('scroll', () => {
   const scrollHeight = window.pageYOffset;
   const navHeight = header.getBoundingClientRect().height;
   if (scrollHeight > navHeight) {
     navbar.classList.add('fixed-nav');
+    infoWrap.classList.add('fixed');
   } else {
     navbar.classList.remove('fixed-nav');
+    infoWrap.classList.remove('fixed');
   }
   if (scrollHeight > 300) {
     topLink.classList.add('show-link');
