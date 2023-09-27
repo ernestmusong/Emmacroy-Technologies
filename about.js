@@ -1,3 +1,9 @@
+// SET DATE
+const elements = [...document.querySelectorAll(".date")];
+elements.forEach((element) => {
+  element.innerHTML = new Date().getFullYear();
+})
+
 // SIDE-BAR
 const sideBar = document.querySelector('.sidebar');
 const openBtn = document.querySelector('#open');
