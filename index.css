@@ -743,10 +743,10 @@ input:focus:invalid {
  /* -----------------------------------------------------------CERTIFICATE */
 
  .certificate {
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+   margin: 0 auto;
+   margin-bottom: 4rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
  }
 
  .certificate .response {
@@ -1104,13 +1104,19 @@ input:focus:invalid {
 }
 
 .ebook-para {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 #ebook-btn,
 #ebook-link {
   text-decoration: underline;
+}
+
+#ebook-btn {
+  font-size: 1.25rem;
+   
 }
 
 #close-modal,
@@ -1377,6 +1383,7 @@ footer {
 .certificate {
   width: 75%;
 }
+
   /* PROGRAMS */
 
   .programs {
