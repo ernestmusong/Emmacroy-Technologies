@@ -1,61 +1,71 @@
 // data for all cards
 const reviews = [
+  // {
+  //   id: 3,
+  //   name: 'masala vanela',
+  //   profession: 'student',
+  //   country: 'Cameroon',
+  //   text: `Coding used to be a nightmare for me but thanks to Emmacroy, I'm now a pro in javaScript!
+  //   They make coding as easy as possible`,
+  //   img: 'images/elvis.jpg',
+  //   email: "example@gmail.com"
+  // },
+  // {
+  //   id: 4,
+  //   name: 'ndashi brandon',
+  //   profession: 'student',
+  //   country: 'USA',
+  //   text: `I was so passionate about coding worried about where to start.
+  //   I was so passionate about coding worried about where to start.
+  //   I'm happy I found this place. They make coding really easy to learn.`,
+  //   img: 'images/louis.jpg',
+  //   email: "example@gmail.com"
+  // },
   {
     id: 1,
-    name: 'Mbah denzel',
-    profession: 'student',
+    name: 'Musong louis',
+    profession: 'client',
     country: 'Cameroon',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/denzel.jpg',
-    email: "example@gmail.com"
+    text: 'Their timely delivery and quality of work is what I love about them.',
+    img: 'images/louis.jpg',
+    email: "musonglouis@yahoo.com"
   },
+{
+  id: 5,
+  name: 'njandillo campbello',
+  profession: 'student',
+  country: 'South Africa',
+  text: `In just three weeks, I was able to build a proffessional WordPress website on my own.
+  They make it supper easy to learn.`,
+  img: 'images/campbello2.jpg',
+  email: "martinnjandi@gmail.com"
+},
   {
     id: 2,
-    name: 'Derick dice sk',
-    profession: 'student',
-    country: 'Cameroon',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/derick.jpg',
-    email: "example@gmail.com"
-  },
-  {
-    id: 3,
-    name: 'katche elvis',
+    name: 'Fornishi okumo',
     profession: 'client',
-    country: 'Cameroon',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/elvis.jpg',
-    email: "example@gmail.com"
+    country: 'USA',
+    text: 'What I wanted was what I got, and on time. They are the best.',
+    img: 'images/teks.jpeg',
+    email: "Fornishindikumokumo@gmail.com"
   },
-  {
-    id: 4,
-    name: 'louis katche',
-    profession: 'client',
-    country: 'Cameroon',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/louis.jpg',
-    email: "example@gmail.com"
-  },
-  {
-    id: 5,
-    name: 'katche festus',
-    profession: 'Student',
-    country: 'Cameroon',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/festus.jpg',
-    email: "example@gmail.com"
-  },
-  {
-    id: 6,
-    name: 'kum paul',
-    profession: 'client',
-    country: 'Cameroon',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    img: 'images/eleven.jpeg',
-    email: "example@gmail.com"
-  },
+   
 ];
 
+// COUNT UP
+// const counters = [...document.querySelectorAll(".value")];
+// const updateCount = () => {
+//   counters.forEach((counter) => {
+//     const increment = () => {
+//       counter.innerHTML++;
+//     }
+//     counter.innerText = 0;
+//     const target = +counter.getAttribute("data-target");
+//     while (counter.innerHTML < target) {
+//       setTimeout(increment, 5);
+//     }
+//   })};
+ 
 // SET DATE
 const elements = [...document.querySelectorAll(".date")];
 elements.forEach((element) => {
@@ -136,13 +146,21 @@ window.addEventListener('scroll', () => {
 });
 
 //MODAL
-
 const reviewBtn = document.getElementById('review-btn');
 const modal = document.querySelector('.popup-overlay');
 const closeModal = document.querySelector('#close-modal');
 
 const toggleModal = () => {
   modal.classList.toggle('hide');
+}
+//EBOOK
+const ebookLink = document.getElementById('ebook-link');
+const ebookModal = document.querySelector('.ebook-overlay');
+const ebookModalClose = document.querySelector('#ebook-close-modal');
+const ebookBtn = document.querySelector('#ebook-btn');
+
+const toggleEbookModal = () => {
+  ebookModal.classList.toggle('hide');
 }
 
 
@@ -153,3 +171,6 @@ nextBtn.addEventListener("click", nextPerson);
 prevBtn.addEventListener("click", prevPerson);
 reviewBtn.addEventListener("click", toggleModal)
 closeModal.addEventListener('click', toggleModal)
+ebookModalClose.addEventListener('click', toggleEbookModal)
+ebookLink.addEventListener('click', toggleEbookModal)
+ebookBtn.addEventListener('click', toggleEbookModal)

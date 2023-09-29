@@ -1065,7 +1065,8 @@ input:focus:invalid {
 
 /* ------------------------------------Popup---------------------------------------------------- */
 
-.popup-overlay {
+.popup-overlay, 
+.ebook-overlay {
   background: rgba(193, 199, 208, 0.9);
   backdrop-filter: blur(5px);
   padding-top: 20px;
@@ -1080,7 +1081,40 @@ input:focus:invalid {
   overflow-y: scroll;
 }
 
-#close-modal {
+.ebook-overlay {
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.ebook-text-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.book-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.book-wrapper img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.ebook-para {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#ebook-btn,
+#ebook-link {
+  text-decoration: underline;
+}
+
+#close-modal,
+#ebook-close-modal {
   top: 1rem;
   right: 1rem;
   position: absolute;
@@ -1440,6 +1474,19 @@ footer {
     align-items: flex-start;
   }
 
+  .book-wrapper {
+    width: 50%;
+    height: 90%;
+  }
+  .book-wrapper img {
+    height: 100%;
+  }
+
+  .ebook-text-wrap {
+    width: 50%;
+    margin:  0 auto;
+  }
+
   /* COUNTER */
   .counter-overlay {
     flex-direction: row;
@@ -1559,7 +1606,6 @@ footer {
   }
 
   .popup-overlay {
-    padding-top: 122px;
     padding-bottom: 86px;
     padding-left: 260px;
     padding-right: 260px;
