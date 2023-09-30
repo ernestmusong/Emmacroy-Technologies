@@ -137,13 +137,17 @@ nav {
 .logo {
   height: 60.74px;
   width: 100px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: var(--color-bg);
 }
 
 
 .logo-img {
-width: 100%;
-height: 100%;
 max-width: 100%;
+position: absolute;
+object-fit: contain;
 }
 
 .info-wrapper {
@@ -157,7 +161,6 @@ max-width: 100%;
   place-items: center;
   left: 0;
   right: 0;
-  top: 60.74px;
 }
 
 .info {
@@ -1302,9 +1305,13 @@ footer {
     margin: 0 auto;
     height: 90px;
   }
-  .nav-inner .logo {
+  .logo {
     width: 200px;
-    height: 150px;
+    height: 90px;
+  }
+
+  .logo-img {
+    height: 100%;
   }
 
   #bars,
