@@ -29,17 +29,17 @@ closeModal.addEventListener('click', toggleModal)
 const navbar = document.getElementById('nav');
 const header = document.getElementById('header');
 const topLink = document.querySelector('.back-to-top');
-const infoWrap = document.querySelector('.info-wrapper');
+const topNav = document.querySelector('.top-nav');
 
 window.addEventListener('scroll', () => {
   const scrollHeight = window.pageYOffset;
-  const navHeight = header.getBoundingClientRect().height;
-  if (scrollHeight > navHeight) {
-    navbar.classList.add('fixed-nav');
-    infoWrap.classList.add('fixed');
+  const headerHeight = header.getBoundingClientRect().height;
+  if (scrollHeight > headerHeight) {
+    header.classList.add('fixed');
+    topNav.classList.add('hide');
   } else {
-    navbar.classList.remove('fixed-nav');
-    infoWrap.classList.remove('fixed');
+    header.classList.remove('fixed');
+    topNav.classList.remove('hide');
   }
   if (scrollHeight > 300) {
     topLink.classList.add('show-link');
