@@ -140,7 +140,6 @@ nav {
   display: grid;
   place-items: center;
   position: relative;
-  background: var(--color-bg);
 }
 
 
@@ -1658,6 +1657,10 @@ footer {
     height: 200px;
   }
 
+  footer .logo {
+    background: var(--color-bg);
+  }
+
   .about-footer {
     background: var(--main-black);
   }
@@ -1671,7 +1674,7 @@ footer {
   }
 
   .footer-inner a {
-    color: var(--main-black);
+    color: var(--orange);
   }
 
   .copy-right {
