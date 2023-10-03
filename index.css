@@ -196,12 +196,15 @@ object-fit: contain;
 #close-btn {
   height: 40px;
   width: 40px;
-  font-size: 2rem;
   display: grid;
   place-items: center;
   border: none;
   background: transparent;
   z-index: 999;
+}
+
+#bars {
+  font-size: 2rem;
 }
 
 #close-btn {
