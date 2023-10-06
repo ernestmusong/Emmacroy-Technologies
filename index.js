@@ -146,7 +146,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-//MODAL
+//REGISTER FORM
 const reviewBtn = document.getElementById('review-btn');
 const modal = document.querySelector('.popup-overlay');
 const closeModal = document.querySelector('#close-modal');
@@ -154,6 +154,16 @@ const closeModal = document.querySelector('#close-modal');
 const toggleModal = () => {
   modal.classList.toggle('hide');
 }
+//REVIEW FORM
+const addReviewBtn = document.getElementById('add-review-btn');
+const remviewModal = document.querySelector('.review_form');
+const closeReviewModal = document.querySelector('#close-review-modal');
+
+const toggleReviewModal = () => {
+  console.log('clicked')
+  remviewModal.classList.toggle('hide');
+}
+
 //EBOOK
 const ebookLink = document.getElementById('ebook-link');
 const ebookModal = document.querySelector('.ebook-overlay');
@@ -172,6 +182,8 @@ nextBtn.addEventListener("click", nextPerson);
 prevBtn.addEventListener("click", prevPerson);
 reviewBtn.addEventListener("click", toggleModal)
 closeModal.addEventListener('click', toggleModal)
+addReviewBtn.addEventListener('click', toggleReviewModal)
+closeReviewModal.addEventListener('click', toggleReviewModal)
 ebookModalClose.addEventListener('click', toggleEbookModal)
 ebookLink.addEventListener('click', toggleEbookModal)
 ebookBtn.addEventListener('click', toggleEbookModal)

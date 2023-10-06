@@ -433,7 +433,7 @@
                             <p id="info" ></p>
                       </div>
                   </div>
-                    <button class="contact-button" id="review-btn">Add a review</button>
+                    <button class="contact-button" id="add-review-btn">Add a review</button>
                 </div>
     </div>
 </section>
@@ -766,7 +766,7 @@
                         <li>
                             <label for="msg">
                                 Message
-                                <textarea id="msg" name="user_message"  maxlength="500" placeholder="Anything else? type here!"></textarea>
+                                <textarea id="msg" name="msg"  maxlength="500" placeholder="Anything else? type here!"></textarea>
                             </label>
                         </li>
                     </ul>
@@ -782,7 +782,7 @@
 
         <!-- Review form -->
         <div class="review_form hide">
-            <button id="close-modal">&times;</button>
+            <button id="close-review-modal">&times;</button>
             <h2>Add a review</h2>
             <div class="form-wrapper">
                 <form action="https://formspree.io/f/maygpvdz"
@@ -791,13 +791,13 @@
                         <li>
                             <label for="name">
                                 Name <br>
-                                <input type="text" id="name" name="full_name" maxlength="30" placeholder="Your full name" required>
+                                <input type="text" id="name" name="name" maxlength="30" placeholder="Your full name" required>
                             </label>
                         </li>
                         <li>
-                            <label for="mail">
+                            <label for="user_email">
                                 Email
-                                <input type="email" id="mail" name="user_email" placeholder="Your email address" required>
+                                <input type="email" id="user_email" name="user_email" placeholder="Your email address" required>
                             </label>
                         </li>
                         <li>
@@ -1069,7 +1069,7 @@
                             </label>
                         </li>
                         <li>
-                            <label for="msg">
+                            <label for="user_message">
                                 Review
                                 <textarea id="msg" name="user_message"  maxlength="500" placeholder="Your review" required></textarea>
                             </label>
@@ -1084,8 +1084,8 @@
                 </form>
             </div>
         </div>
-<!-- E-BOOK -->
 
+<!-- E-BOOK -->
 <div class="ebook-overlay hide">
     <button id="ebook-close-modal">&times;</button>
     <div class="book-wrapper">
