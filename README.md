@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-  <h3><b>Portfolio</b></h3>
+  <h3><b>Emmacroy Technologies</b></h3>
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -24,7 +24,7 @@
 
 # 📖 [Emmacroy Technologies] <a name="about-project"></a>
 
-**[Emmacroy Technologies]** is my capstone project at <a href='https://www.microverse.org/'>Microverse</a> module one. It's an education website for web development. It currently contains only the Home and About pages, other pages like the contact page and registration pages will be create later. It is currently onsite but I intend to make it online too.
+**[Emmacroy Technologies]** is an online web development & web design school in Cameroon.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,13 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://ernestmusong.github.io/Emmacroy-Technologies/)
-
-## 🚀 Project Presentation <a name="live-demo"></a>
-
-- [Presentation Link](https://www.loom.com/share/4b595ef83b604aba8c94f3e6b0ce7093)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [Live Demo Link](https://www.emmacroy.cm/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
