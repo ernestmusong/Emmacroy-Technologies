@@ -5,8 +5,8 @@ const reviews = [
   //   name: 'masala vanela',
   //   profession: 'student',
   //   country: 'Cameroon',
-  //   text: `Coding used to be a nightmare for me but thanks to Emmacroy, I'm now a pro in javaScript!
-  //   They make coding as easy as possible`,
+  //   text: `Coding used to be a nightmare for me but thanks to Emmacroy
+  //   I'm now a pro in javaScript! They make coding as easy as possible`,
   //   img: 'images/elvis.jpg',
   //   email: "example@gmail.com"
   // },
@@ -28,18 +28,18 @@ const reviews = [
     country: 'Cameroon',
     text: 'Their timely delivery and quality of work is what I love about them.',
     img: 'images/louis.jpg',
-    email: "musonglouis@yahoo.com"
+    email: 'musonglouis@yahoo.com',
   },
-{
-  id: 5,
-  name: 'njandillo campbello',
-  profession: 'student',
-  country: 'South Africa',
-  text: `In just three weeks, I was able to build a proffessional WordPress website on my own.
+  {
+    id: 5,
+    name: 'njandillo campbello',
+    profession: 'student',
+    country: 'South Africa',
+    text: `In just three weeks, I was able to build a proffessional WordPress website on my own.
   They make it supper easy to learn.`,
-  img: 'images/campbello2.jpg',
-  email: "martinnjandi@gmail.com"
-},
+    img: 'images/campbello2.jpg',
+    email: 'martinnjandi@gmail.com',
+  },
   {
     id: 2,
     name: 'Fornishi okumo',
@@ -48,9 +48,9 @@ const reviews = [
     text: `What I wanted was what I got, and on time. They're the best in web
     app development.`,
     img: 'images/teks.jpeg',
-    email: "Fornishindikumokumo@gmail.com"
+    email: 'Fornishindikumokumo@gmail.com',
   },
-   
+
 ];
 
 // COUNT UP
@@ -66,13 +66,12 @@ const reviews = [
 //       setTimeout(increment, 5);
 //     }
 //   })};
- 
+
 // SET DATE
-const elements = [...document.querySelectorAll(".date")];
+const elements = [...document.querySelectorAll('.date')];
 elements.forEach((element) => {
   element.innerHTML = new Date().getFullYear();
-})
- 
+});
 
 // SIDE-BAR
 const sideBar = document.querySelector('.sidebar');
@@ -84,47 +83,48 @@ openBtn.addEventListener('click', () => {
 sideBar.addEventListener('click', () => {
   sideBar.classList.toggle('sidebar');
 });
- 
-  //slect items
-  const personImg = document.getElementById("person-img");
-  const author = document.getElementById("author");
-  const job = document.getElementById("job");
-  const info = document.getElementById("info");
-  const personCountry = document.querySelector('#country')
-  const personEmail = document.querySelector('#email')
-  const prevBtn = document.querySelector("#prevBtn");
-  const nextBtn = document.querySelector("#nextBtn");
-  
-  //Testimonials
-  let currentItem = 0;
-  function showPerson(arr) {
-      const {img, name, profession, text, email, country } = arr[currentItem];
-      personImg.src = img;
-      author.textContent = name;
-      job.textContent = profession;
-      info.textContent = text;
-      personEmail.textContent = email;
-      personCountry.textContent = country;
-  }
 
- nextPerson = () => {
-  currentItem++
+// slect items
+const personImg = document.getElementById('person-img');
+const author = document.getElementById('author');
+const job = document.getElementById('job');
+const info = document.getElementById('info');
+const personCountry = document.querySelector('#country');
+const personEmail = document.querySelector('#email');
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+// Testimonials
+let currentItem = 0;
+function showPerson(arr) {
+  const {
+    img, name, profession, text, email, country,
+  } = arr[currentItem];
+  personImg.src = img;
+  author.textContent = name;
+  job.textContent = profession;
+  info.textContent = text;
+  personEmail.textContent = email;
+  personCountry.textContent = country;
+}
+
+const nextPerson = () => {
+  currentItem += 1;
   if (currentItem > reviews.length - 1) {
     currentItem = 0;
   }
-  showPerson(reviews)
- }
+  showPerson(reviews);
+};
 
- prevPerson = () => {
-  currentItem--
+const prevPerson = () => {
+  currentItem -= 1;
   if (currentItem < 0) {
     currentItem = reviews.length - 1;
   }
-  showPerson(reviews)
- }
+  showPerson(reviews);
+};
 
 // SCROLL EFFECTS
-const navbar = document.getElementById('nav');
 const header = document.getElementById('header');
 const topLink = document.querySelector('.back-to-top');
 const topNav = document.querySelector('.top-nav');
@@ -146,25 +146,24 @@ window.addEventListener('scroll', () => {
   }
 });
 
-//REGISTER FORM
+// REGISTER FORM
 const reviewBtn = document.getElementById('review-btn');
 const modal = document.querySelector('.popup-overlay');
 const closeModal = document.querySelector('#close-modal');
 
 const toggleModal = () => {
   modal.classList.toggle('hide');
-}
-//REVIEW FORM
+};
+// REVIEW FORM
 const addReviewBtn = document.getElementById('add-review-btn');
 const remviewModal = document.querySelector('.review_form');
 const closeReviewModal = document.querySelector('#close-review-modal');
 
 const toggleReviewModal = () => {
-  console.log('clicked')
   remviewModal.classList.toggle('hide');
-}
+};
 
-//EBOOK
+// EBOOK
 const ebookLink = document.getElementById('ebook-link');
 const ebookModal = document.querySelector('.ebook-overlay');
 const ebookModalClose = document.querySelector('#ebook-close-modal');
@@ -172,18 +171,17 @@ const ebookBtn = document.querySelector('#ebook-btn');
 
 const toggleEbookModal = () => {
   ebookModal.classList.toggle('hide');
-}
-
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   showPerson(reviews);
 });
-nextBtn.addEventListener("click", nextPerson);
-prevBtn.addEventListener("click", prevPerson);
-reviewBtn.addEventListener("click", toggleModal)
-closeModal.addEventListener('click', toggleModal)
-addReviewBtn.addEventListener('click', toggleReviewModal)
-closeReviewModal.addEventListener('click', toggleReviewModal)
-ebookModalClose.addEventListener('click', toggleEbookModal)
-ebookLink.addEventListener('click', toggleEbookModal)
-ebookBtn.addEventListener('click', toggleEbookModal)
+nextBtn.addEventListener('click', nextPerson);
+prevBtn.addEventListener('click', prevPerson);
+reviewBtn.addEventListener('click', toggleModal);
+closeModal.addEventListener('click', toggleModal);
+addReviewBtn.addEventListener('click', toggleReviewModal);
+closeReviewModal.addEventListener('click', toggleReviewModal);
+ebookModalClose.addEventListener('click', toggleEbookModal);
+ebookLink.addEventListener('click', toggleEbookModal);
+ebookBtn.addEventListener('click', toggleEbookModal);
