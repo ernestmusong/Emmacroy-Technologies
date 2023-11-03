@@ -1,37 +1,58 @@
 const accordions = [
   {
-    question: 'What is Emmacroy Technologies cost and tuition ?',
-    answer: '',
+    question: 'What is the cost of the Web Development program ?',
+    answer: `The cost of studying at Emmacroy Technologies is 300.000cfa
+    for the 7-months program, and 350.000cfa for the 9-months program. 
+    However, there is an exeption to those who want to study a particular
+    language e.g JavaScript only or frontend development. In this case, they
+    are charged 50.000cfa per month, and the total amount they will pay will
+    depends on the duration of the language(s). Note that, even one day into the
+    next month is considered a full month. A month is calculate from the date
+    you started to the exact same date into the next month. E.g if you started
+    on the 4th of May, then the 4th of June makes one month of study.`,
     isOpen: false,
   },
   {
     question: 'In how many installments can I pay for tuition ?',
-    answer: '',
+    answer: `Students can pay in any number of installments for the full-time
+    web development program, but they are required to make a mandatory payment of 150.000cfa or above
+    as first installment, and the complete amount must be paid on or before the
+    end of the frontend program.`,
+    isOpen: false,
+  },
+  {
+    question: 'What is the cost of studying Web Design at Emmacroy Technologies ?',
+    answer: `The cost of studying Web Design at Emmacroy Technologies is 150.000cfa,
+     payable in three installments, with a mandatory first deposit of 75.000cfa.`,
     isOpen: false,
   },
   {
     question: 'Can I pay for a single course ?',
-    answer: '',
+    answer: `Yes, you can pay to study a single course e.g HTML, CSS, etc... but note that
+     you will be charged 50.000cfa per month.`,
     isOpen: false,
   },
   {
     question: 'Will I be issued a certificate upon completion ?',
-    answer: '',
+    answer: `Yes, you will be issued a globally recognised certification
+    from freeCodeCamp for every stack you complete.`,
     isOpen: false,
   },
   {
     question: 'I have no previous knowledge in coding, can I join the program ?',
-    answer: '',
+    answer: `Yes, you can join the full-time program or take a single course irrespective of
+    your experience level. Remember we build you from Zero to Hero.`,
     isOpen: false,
   },
   {
-    question: 'I am not a Cameroonian, can I join the program ?',
-    answer: '',
+    question: 'Can I take a break ?',
+    answer: `Yes, you're free to take a break whenever you want, but note that we
+     only pause studies during official holidays such as Christmas.`,
     isOpen: false,
   },
   {
-    question: 'Can I enroll in both web dev and web design?',
-    answer: '',
+    question: 'Can I enroll in both web dev and web design ?',
+    answer: `Yes, you can enroll in both programs since their time tables don't clash.`,
     isOpen: false,
   },
 
