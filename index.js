@@ -1,4 +1,3 @@
-// data for all cards
 const reviews = [
   // {
   //   id: 3,

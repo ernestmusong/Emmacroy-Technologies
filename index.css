@@ -225,7 +225,6 @@ nav {
   transform: translate(0);
   transition: 0.3s ease;
   z-index: 999;
-  background: #fff;
 }
 
 .sidebar {
@@ -1241,6 +1240,7 @@ footer {
   margin: auto;
   cursor: pointer;
   position: fixed;
+  padding-right: 0.5rem;
 }
 
 .whatsappbutton span {
@@ -1682,10 +1682,6 @@ footer {
 
   footer .logo {
     background: var(--color-bg);
-  }
-
-  .about-footer {
-    background: var(--main-black);
   }
 
   .footer-inner {
