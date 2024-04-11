@@ -224,6 +224,7 @@ nav {
   position: fixed;
   transform: translate(0);
   transition: 0.3s ease;
+  background: var(--white);
   z-index: 999;
 }
 
